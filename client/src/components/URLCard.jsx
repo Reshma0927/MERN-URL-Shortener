@@ -1,6 +1,6 @@
 function URLCard({ link }) {
 
-  const shortURL = `http://localhost:3000/${link.shortCode}`;
+  const shortURL = `https://mern-url-shortener-jicf.onrender.com/${link.shortCode}`;
 
   function copyLink() {
 
