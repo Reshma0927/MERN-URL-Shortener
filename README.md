@@ -4,9 +4,9 @@ A modern full-stack URL Shortener application built using the MERN Stack. This a
 
 ### Live Demo
 
-**Frontend:** `https://mern-url-shortener-f0ohz1zsh-reshma0927s-projects.vercel.app/`
+**Frontend:** https://mern-url-shortener-f0ohz1zsh-reshma0927s-projects.vercel.app/
 
-**Backend API:** `https://mern-url-shortener-jicf.onrender.com/`
+**Backend API:** https://mern-url-shortener-jicf.onrender.com/
 
 ---
 
