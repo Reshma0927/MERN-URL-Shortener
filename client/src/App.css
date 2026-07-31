@@ -1,0 +1,184 @@
+/* General Reset & Page Setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f7f6;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+
+#root {
+  width: 100%;
+  max-width: 600px;
+  padding: 0 16px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #2c3e50;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 0 0 12px 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h2 {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+/* URL Form */
+.url-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.url-form input {
+  flex: 1;
+  padding: 14px 16px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.url-form input:focus {
+  border-color: #3498db;
+}
+
+.url-form button {
+  padding: 14px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.url-form button:hover {
+  background-color: #2980b9;
+}
+
+.url-form button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+/* Error Message */
+.error-message {
+  color: #e74c3c;
+  background-color: #fde8e8;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #f8b4b4;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Empty State */
+.empty {
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 1rem;
+  margin-top: 40px;
+}
+
+/* URL List & Cards */
+.url-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.url-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.url-card h3 {
+  font-size: 0.95rem;
+  color: #555;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 500;
+}
+
+.url-card p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  word-break: break-all;
+}
+
+/* Buttons inside Cards */
+.url-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.url-buttons button {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.url-buttons button:first-child {
+  background-color: #e2e8f0;
+  color: #2d3748;
+}
+
+.url-buttons button:first-child:hover {
+  background-color: #cbd5e1;
+}
+
+.url-buttons a {
+  text-decoration: none;
+}
+
+.url-buttons a button {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.url-buttons a button:hover {
+  background-color: #27ae60;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 480px) {
+  .url-form {
+    flex-direction: column;
+  }
+
+  .url-form button {
+    width: 100%;
+  }
+}
