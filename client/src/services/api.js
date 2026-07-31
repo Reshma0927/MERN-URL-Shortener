@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "https://mern-url-shortener-jicf.onrender.com";
 
 export async function shortenURL(data) {
 
